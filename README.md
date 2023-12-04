@@ -19,6 +19,7 @@ This project aims to predict customer churn for a Telco company by building a cl
 ## Data Dictionary
 
 Here is a brief description of the features in the Telco dataset:
+   
    1.|  customer_id       |       Unique identifier for each customer                                                   |
    
    2.|  gender            |            Customer's gender (Male/Female)                                                  |

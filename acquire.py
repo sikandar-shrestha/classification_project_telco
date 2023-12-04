@@ -7,7 +7,9 @@ import os
 
 def check_file_exists(filename, query, url):
     '''
-    students - add docstring
+    This function caching the data.Either it from your local system or 
+    from the codeup mysql database.
+    
     '''
     if os.path.exists(filename):
         print('this file exists, reading csv')
@@ -26,7 +28,10 @@ def check_file_exists(filename, query, url):
 
 def get_telco_data():
     '''
-    students - add docstring
+    This function sets the filename to 'telco.csv', the url to read from the codeup mysql db 'telco_churn', 
+    & the query to pull all data for the following left joined tables: customers, contract_types, internet_service_types, &    
+    payment_type.
+    It will then check if the file exists. If it does, it will read the file & return it to us as a dataframe. If it does not       exist, it will create the file & return it to us as a dataframe.
     '''
     url = env.get_db_url('telco_churn')
     query = '''

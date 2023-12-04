@@ -12,7 +12,7 @@ def preprocess_telco(train_df, val_df, test_df):
     
     output:
     encoded, ML-ready versions of train, validate, and test with 
-    object type colummncs encoded in the one-hot fashion
+    object type columns encoded in the one-hot fashion
     return: (pd.DataFrame, pd.DataFrame, pd.DataFrame)
     '''
      

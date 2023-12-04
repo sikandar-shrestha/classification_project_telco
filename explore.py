@@ -78,6 +78,131 @@ def explore_con_target(train,con_col):
         plt.xlabel(target_variable)
         plt.ylabel(column)
         plt.show()
+        
+        
+        
+def bar_pay_tar(train):
+    '''
+    This function shows the relationship between 
+    payment_type Vs churn.
+    
+    input : train dataframe
+    
+    output : barplot diagram
+    
+    '''
+    
+    # customers with electronic check payment types churned a lot
+    plt.figure(figsize=(10, 6))
+    sns. countplot(data=train,x='payment_type', hue='churn' )
+    plt.title('Churn by Payment Type')
+    plt.xlabel('Payment Type')
+    plt.ylabel('Count')
+    plt.show()
+    
+    
+    
+def chi_pay_tar(train):
+    
+    '''get result of chi-square for payment_type and chrn'''
+    
+    observed = pd.crosstab(train.payment_type, train.churn)
+
+    chi2, p, dof, expected = stats.chi2_contingency(observed)
+
+    print(f'chi^2 = {chi2:.4f}')
+    print(f'p     = {p:.4f}')
+
+    
+
+ 
+ 
+    
+    
+def pie_contract_tar(train):
+    
+    '''
+    This function shows the relationship between 
+    contract_type Vs churn.
+    
+    input : train dataframe
+    
+    output : pie chart
+    
+    '''
+    # create axes objects
+    fig,(ax1,ax2,ax3) = plt.subplots(1,3,figsize=(10,10))
+
+    # generate pie chart and assign it to ax1
+    values = [len(train.churn[(train.contract_type == 'Month-to-month') & (train.churn == 'Yes')]),
+              len(train.churn[(train.contract_type == 'Month-to-month') & (train.churn == 'No')])]
+    labels = ['churn', 'no churn']
+
+    ax1.pie(values, labels=labels, colors=['green', 'yellow'])
+    ax1.title.set_text('churn by Month-to-month')
+    
+    
+    # generate pie chart and assign it to ax2
+    values = [len(train.churn[(train.contract_type == 'Two year') & (train.churn == 'Yes')]),
+              len(train.churn[(train.contract_type == 'Two year') & (train.churn == 'No')])]
+    labels = ['churn', 'no churn']
+
+    ax2.pie(values, labels=labels,colors=['cyan', 'pink'])
+    ax2.title.set_text('churn by Two year')
+    
+    
+    
+    # generate pie chart and assign it to ax3
+    values = [len(train.churn[(train.contract_type == 'One year') & (train.churn == 'Yes')]),
+              len(train.churn[(train.contract_type == 'One year') & (train.churn == 'No')])]
+    labels = ['churn', 'no churn']
+
+    ax3.pie(values, labels=labels, autopct='%.0f%%', colors=['#ffc3a0', '#c0d6e4'])
+    ax3.title.set_text('churn by One year')
+    
+    
+    # display plot
+    plt.tight_layout
+    plt.show()
+
+    
+    
+    
+    
+    
+    
+def chi_contract_tar(train):
+    
+    
+    '''get result of chi-square for contract_type and churn'''
+    
+    observed = pd.crosstab(train.contract_type, train.churn)
+
+    chi2, p, dof, expected = stats.chi2_contingency(observed)
+
+    print(f'chi^2 = {chi2:.4f}')
+    print(f'p     = {p:.4f}')
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+        
+        
+        
+
 
     
     

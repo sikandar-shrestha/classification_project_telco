@@ -51,14 +51,11 @@ Here is a brief description of the features in the Telco dataset:
   16.|  monthly_charges : |  Specifies the money paid by a customer each month.                                         |   
   
   17.|  total_charges :   |    The total money paid by the customer to the company.                                       |      
-  
-  18.|  churn :     |            This is the target variable which specifies if a customer has churned or not.(Yes/No)      |                 
-  19.|  contract_type:|     The type of contract a customer has chosen.(one year/month-to-month/two year)              |        
-  
+  18.|  churn :           |  This is the target variable which specifies if a customer has churned or not.(Yes/No)      |                 
+  19.|  contract_type:    |     The type of contract a customer has chosen.(one year/month-to-month/two year)              |        
   20.|  internet_service_type:|  The type of internet services chosen by the customer.(DSL/fiber optic/neither)        |
   
-  21.|  payment_type :|  Specifies the method by which bills are paid.                                                 |
-     |                | (bank transfer(automatic),credit card(automatic),electronic check, mailed check)               |
+  21.|  payment_type :|  Specifies the method by which bills are paid.(bank transfer(automatic),credit card(automatic),electronic check, mailed check)               |
                        
  
  

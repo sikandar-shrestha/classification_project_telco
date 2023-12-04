@@ -19,6 +19,9 @@ This project aims to predict customer churn for a Telco company by building a cl
 ## Data Dictionary
 
 Here is a brief description of the features in the Telco dataset:
+ 
+ 
+ 
  | SN | Field Name         | Description                                                                                 |
  
  |----|--------------------|---------------------------------------------------------------------------------------------|   

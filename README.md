@@ -23,7 +23,6 @@ Here is a brief description of the features in the Telco dataset:
   
  
  | SN | Field Name | Description |
- 
  | -- | ---------- | ----------- |   
  | 1. | customer_id | Unique identifier for each customer |
  | 2. | gender | Customer's gender (Male/Female) |

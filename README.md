@@ -32,11 +32,11 @@ Here is a brief description of the features in the Telco dataset:
  | 6. | tenure | Number of months the customer has stayed with the company(1 to 72) |
  | 7. | phone_service | Whether a customer has a landline phone service (Yes/No) |
  | 8. | multiple_lines | Whether a customer has multiple lines of internet connectivity.(Yes/No/No phone service) |       
- | 9. | Online_security | Specifies if a customer has online security.(Yes/No) |
- | 10. | online_backup| The type of internet services chosen by the customer.(Yes/No) |
- | 11. | device_protection:| Specifies if a customer has opted for device protection.(Yes/No) |  
- | 12. | tech_support| Whether a customer has opted for tech support of not.(Yes/No) |      
- | 13. | streaming_tv | Whether a customer has an option of TV streaming.(Yes/No) |         
+ | 9. | Online_security | Specifies if a customer has online security.(Yes/No/No internet sevice) |
+ | 10. | online_backup| The type of internet services chosen by the customer.(Yes/No/No internet service) |
+ | 11. | device_protection:| Specifies if a customer has opted for device protection.(Yes/No/No internet service) |  
+ | 12. | tech_support| Whether a customer has opted for tech support of not.(Yes/No/No internet service) |      
+ | 13. | streaming_tv | Whether a customer has an option of TV streaming.(Yes/No/No internet servie) |         
  | 14. | streaming_movies |   Whether a customer has an option of Movie streaming.(Yes/No/no internet service) |   
  | 15. | paperless_billing |  Whether a customer has opted for paperless billing.(Yes/No) |      
  | 16. | monthly_charges | Specifies the money paid by a customer each month. |   

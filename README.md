@@ -20,25 +20,25 @@ This project aims to predict customer churn for a Telco company by building a cl
 
 Here is a brief description of the features in the Telco dataset:
  
- 
- 
- | SN | Field Name         |                        Description                                                          |
- 
- | ---- | -------------------- | -------------------------------------------------------------------------------------------- |   
   
- | 1. |  customer_id       |       Unique identifier for each customer                                                   |
+ 
+ | SN | Field Name | Description |
+ 
+ | -- | ---------- | ----------- |   
+  
+ | 1. | customer_id |Unique identifier for each customer |
    
- | 2. |  gender            |            Customer's gender (Male/Female)                                                  |
+ | 2. | gender | Customer's gender (Male/Female) |
+    
+ | 3. | senior_citizen | Whether the customer is a senior citizen (1 for yes, 0 for no)|
    
- | 3. |  senior_citizen    |    Whether the customer is a senior citizen (1 for yes, 0 for no)                           |
+ | 4. | partner| Whether the customer has a partner (Yes/No)|
    
- | 4. |  partner:          |           Whether the customer has a partner (Yes/No)                                       |
+ | 5. | dependents | Whether the customer has dependents (Yes/No)|
    
- | 5. |  dependents:       |        Whether the customer has dependents (Yes/No)                                         |
+ | 6. | tenure|Number of months the customer has stayed with the company(1 to 72)|
    
- | 6. |  tenure:           |            Number of months the customer has stayed with the company(1 to 72)               |
-   
- | 7. | phone_service :    |    Whether a customer has a landline phone service (Yes/No)                                 |
+ | 7. | phone_service     |    Whether a customer has a landline phone service (Yes/No)                                 |
    
  | 8. |  multiple_lines :  |   Whether a customer has multiple lines of internet connectivity.(Yes/No/No phone service)  |       
  | 9. |  Online_security:  |   Specifies if a customer has online security.(Yes/No)                                      |

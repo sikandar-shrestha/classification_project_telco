@@ -24,44 +24,43 @@ Here is a brief description of the features in the Telco dataset:
  
  | SN | Field Name         |                        Description                                                          |
  
- |----|--------------------|---------------------------------------------------------------------------------------------|   
- 
+ | ---- | -------------------- | -------------------------------------------------------------------------------------------- |   
+  
  | 1. |  customer_id       |       Unique identifier for each customer                                                   |
    
- | 2.|  gender            |            Customer's gender (Male/Female)                                                  |
+ | 2. |  gender            |            Customer's gender (Male/Female)                                                  |
    
- | 3.|  senior_citizen    |    Whether the customer is a senior citizen (1 for yes, 0 for no)                           |
+ | 3. |  senior_citizen    |    Whether the customer is a senior citizen (1 for yes, 0 for no)                           |
    
- | 4.|  partner:          |           Whether the customer has a partner (Yes/No)                                       |
+ | 4. |  partner:          |           Whether the customer has a partner (Yes/No)                                       |
    
- | 5.|  dependents:       |        Whether the customer has dependents (Yes/No)                                         |
+ | 5. |  dependents:       |        Whether the customer has dependents (Yes/No)                                         |
    
- | 6.|  tenure:           |            Number of months the customer has stayed with the company(1 to 72)               |
+ | 6. |  tenure:           |            Number of months the customer has stayed with the company(1 to 72)               |
    
- | 7.| phone_service :    |    Whether a customer has a landline phone service (Yes/No)                                 |
+ | 7. | phone_service :    |    Whether a customer has a landline phone service (Yes/No)                                 |
    
- | 8.|  multiple_lines :  |   Whether a customer has multiple lines of internet connectivity.(Yes/No/No phone service)  |       
-   
- | 9.|  Online_security:  |   Specifies if a customer has online security.(Yes/No)                                      |
+ | 8. |  multiple_lines :  |   Whether a customer has multiple lines of internet connectivity.(Yes/No/No phone service)  |       
+ | 9. |  Online_security:  |   Specifies if a customer has online security.(Yes/No)                                      |
   
- |10.|  online_backup :   |    The type of internet services chosen by the customer.(Yes/No)                            |
+ | 10. |  online_backup :   |    The type of internet services chosen by the customer.(Yes/No)                            |
   
- |11.|  device_protection:|    Specifies if a customer has opted for device protection.(Yes/No)                           |  
+ | 11. |  device_protection: |    Specifies if a customer has opted for device protection.(Yes/No)                           |  
   
- |12.|  tech_support  :   |       Whether a customer has opted for tech support of not.(Yes/No)                           |      
- |13.|  streaming_tv :    |       Whether a customer has an option of TV streaming.(Yes/No)                                |         
- |14.| streaming_movies : |   Whether a customer has an option of Movie streaming.(Yes/No/no internet service)         |   
+ | 12. |  tech_support  :   |       Whether a customer has opted for tech support of not.(Yes/No)                           |      
+ | 13. |  streaming_tv :    |       Whether a customer has an option of TV streaming.(Yes/No)                                |         
+ | 14. | streaming_movies : |   Whether a customer has an option of Movie streaming.(Yes/No/no internet service)         |   
   
- |15.| paperless_billing :|  Whether a customer has opted for paperless billing.(Yes/No)                              |      
+ | 15. | paperless_billing : |  Whether a customer has opted for paperless billing.(Yes/No)                              |      
   
- |16.|  monthly_charges : |  Specifies the money paid by a customer each month.                                         |   
+ | 16. |  monthly_charges : |  Specifies the money paid by a customer each month.                                         |   
   
- |17.|  total_charges :   |    The total money paid by the customer to the company.                                       |      
- |18.|  churn :           |  This is the target variable which specifies if a customer has churned or not.(Yes/No)      |                 
- |19.|  contract_type:    |     The type of contract a customer has chosen.(one year/month-to-month/two year)              |        
- |20.|  internet_service_type:|  The type of internet services chosen by the customer.(DSL/fiber optic/neither)        |
+ | 17. |  total_charges :   |    The total money paid by the customer to the company.                                       |      
+ | 18. |  churn :           |  This is the target variable which specifies if a customer has churned or not.(Yes/No)      |                 
+ | 19. |  contract_type:    |     The type of contract a customer has chosen.(one year/month-to-month/two year)              |        
+ | 20. |  internet_service_type: |  The type of internet services chosen by the customer.(DSL/fiber optic/neither)        |
   
- |21.|  payment_type :|  Specifies the method by which bills are paid.(bank transfer(automatic),credit card(automatic),electronic check, mailed check)               |
+ | 21. |  payment_type : |  Specifies the method by which bills are paid.(bank transfer(automatic),credit card(automatic),electronic check, mailed check)               |
                        
  
  

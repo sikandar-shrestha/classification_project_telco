@@ -45,7 +45,7 @@ def get_tree(X_train, X_validate, y_train, y_validate):
     '''get decision tree accuracy on train and validate data'''
 
     # create classifier object
-    tree = DecisionTreeClassifier(max_depth=8, random_state=123)
+    tree = DecisionTreeClassifier(max_depth=5, random_state=123)
 
     #fit model on training data
     tree.fit(X_train, y_train)
@@ -62,7 +62,7 @@ def get_forest(X_train, X_validate, y_train, y_validate):
     '''get random forest accuracy on train and validate data'''
 
     # create model object and fit it to training data
-    rf = RandomForestClassifier(min_samples_leaf=4,max_depth=6, random_state=123)
+    rf = RandomForestClassifier(min_samples_leaf=5,max_depth=6, random_state=123)
     rf.fit(X_train, y_train)
 
     # print result
@@ -76,7 +76,7 @@ def get_log_reg(X_train, X_validate, y_train, y_validate):
     '''get logistic regression accuracy on train and validate data'''
 
     # create model object and fit it to the training data
-    lr= LogisticRegression(solver='liblinear')
+    lr= LogisticRegression(C=1,random_state=123)
     lr.fit(X_train, y_train)
 
     # print result
@@ -85,21 +85,7 @@ def get_log_reg(X_train, X_validate, y_train, y_validate):
     
     
     
-    ################################## model evaluation on test ############################################
-    
-    
-    
-# def get_log_reg_test(X_train, X_test, y_train, y_test):
-#    '''get logistic regression accuracy on train and validate data'''
-
-    # create model object and fit it to the training data
-#    lr= LogisticRegression(solver='liblinear')
-#    lr.fit(X_train, y_train)
-
-    # print result
-#    print(f"Accuracy of Logistic Regression on test is {lr.score(X_test, y_test)}")
-    
-    
+  
     
     
     

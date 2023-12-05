@@ -226,6 +226,49 @@ def get_mann_whitney(train):
     
     
     
+def chi_tenure_tar(train):
+    '''
+       This function gives the chi^2 statistic and p_value
+       input: train dataset
+       output: chi^2-stats
+    
+    '''
+    
+    
+    # Create bins for tenure in terms of years
+    bins = [0, 12, 24, 36, 48, 60, 72, 84]  # adjust as needed
+
+    # Create labels for the bins (representing years)
+    labels = ['0', '1', '2', '3', '4', '5', '6']
+
+    # Bin the 'tenure' column
+    train['tenure_years'] = pd.cut(train['tenure'], bins=bins, labels=labels, right=False)
+
+    # Display the DataFrame with the new 'tenure_years' column
+    print(train[['tenure', 'tenure_years']])
+    
+    
+    # contingency table:
+    observed_tenure = pd.crosstab(train.churn, train.tenure_years)
+    chi2, p, dof, expected = stats.chi2_contingency(observed_tenure)
+    
+    # print contingency table
+    print(observed_tenure)
+    
+    #output values
+    print('Observed')
+    print(observed_tenure.values)
+    print('\nExpected')
+    print(expected.astype(int))
+    print('\n----')
+    print(f'chi^2 = {chi2:.4f}')
+    print(f'p     = {p:.4f}')
+
+
+
+    
+    
+    
 
     
     

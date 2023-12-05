@@ -36,6 +36,11 @@ def cat_con_col(train):
 
 
 def cat_not_churn(cat_col):
+    '''
+    Input: categorical columns
+    ouput: categorical columns list without churn column
+    
+    '''
     
     # Target variable is churn
     target_variable = 'churn'
@@ -62,6 +67,13 @@ def cat_not_churn(cat_col):
 
 def explore_cat_target(train,columns_to_compare):
     
+    '''
+    input: train dataset and columns_to_compare
+    
+    output: distplays all barplot list between columns_to_compare vs target 
+    
+    '''
+    
     target_variable='churn'
     # For loop to create contingency table and bar plot for each comparision column vs churn
     # describe and visualize the distribution of categorical variables and make inferences about 
@@ -86,6 +98,13 @@ def explore_cat_target(train,columns_to_compare):
 
 
 def explore_con_target(train,con_col):
+    
+    '''
+    input: train and continuous columns
+    
+    output: boxplot 
+    
+    '''
     
     target_variable='churn'
     # Create a for loop to compare each continuous variable to the target variable
@@ -207,6 +226,13 @@ def chi_contract_tar(train):
     
     
 def get_mann_whitney(train):
+    
+    '''
+    input: train dataset
+    
+    output: mannwhitneyu statistics and p value
+    
+    '''
     
     #make two arrays of peoples for churned and not churned
 

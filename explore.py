@@ -35,6 +35,26 @@ def cat_con_col(train):
 
 
 
+def cat_not_churn(cat_col):
+    
+    # Target variable is churn
+    target_variable = 'churn'
+
+    # Initialize an empty list to store columns for comparison
+    columns_to_compare = []
+
+    # Create a for loop to iterate through each column in the categorical column list
+    # appending our comparision list as long as the column is not churn
+    for column in cat_col:
+        if column != target_variable:
+            columns_to_compare.append(column)
+    else:
+        pass
+    
+    return columns_to_compare
+
+
+
 
 
 
@@ -138,7 +158,7 @@ def pie_contract_tar(train):
               len(train.churn[(train.contract_type == 'Month-to-month') & (train.churn == 'No')])]
     labels = ['churn', 'no churn']
 
-    ax1.pie(values, labels=labels, colors=['green', 'yellow'])
+    ax1.pie(values, labels=labels,autopct='%.0f%%', colors=['green', 'yellow'])
     ax1.title.set_text('churn by Month-to-month')
     
     
@@ -147,7 +167,7 @@ def pie_contract_tar(train):
               len(train.churn[(train.contract_type == 'Two year') & (train.churn == 'No')])]
     labels = ['churn', 'no churn']
 
-    ax2.pie(values, labels=labels,colors=['cyan', 'pink'])
+    ax2.pie(values, labels=labels,autopct='%.0f%%',colors=['cyan', 'pink'])
     ax2.title.set_text('churn by Two year')
     
     
@@ -182,6 +202,35 @@ def chi_contract_tar(train):
 
     print(f'chi^2 = {chi2:.4f}')
     print(f'p     = {p:.4f}')
+    
+    
+    
+    
+def get_mann_whitney(train):
+    
+    #make two arrays of peoples for churned and not churned
+
+    #all the fares for people that survived
+    churned = train[train.churn == 'Yes'].monthly_charges
+
+    #all the fares for people that didnt survive
+    not_churned = train[train.churn == 'No'].monthly_charges
+    
+    
+    # Performing a mann-whitney
+
+    stat, p_value = stats.mannwhitneyu(churned,not_churned)
+    print(f'stat:{stat}')
+    print(f'p_value:{p_value}')
+    
+    
+    
+    
+
+    
+    
+    
+
 
     
     

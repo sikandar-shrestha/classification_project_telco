@@ -7,13 +7,16 @@ This project aims to predict customer churn for a Telco company by building a cl
 ## Initial Hypotheses and Questions
 
 ### Hypotheses:
-    - Customers with longer tenure are less likely to churn.
-    - Customers with more additional services (e.g., online security, tech support) are less likely to churn.
-    - Contract type may significantly impact churn rates.
+    - There is relationship between 'payment_type' and 'churn'.
+    - There is relationship between 'contract_type' and 'churn'.
+    - monthly charges impacts significantly on 'churn'.
+    - tenure has significantly related with 'churn'.
 
 ### Questions:
-    - What are the primary factors contributing to customer churn?
-    - Can the company predict potential churners accurately?
+    - Does payment_type affect whether or not someone churned?
+    - does contract type affect whether or not someone has churned?
+    - Does monthly charges indicate whether or not someone churned?
+    - Do many customers churn after a certain period?
 
 
 ## Data Dictionary
@@ -64,31 +67,48 @@ Here is a brief description of the features in the Telco dataset:
 
 
 ## Reproducibility
-To reproduce this project:
-Data: Obtain the Telco dataset from codeup mysql database named 'telco_churn'.
-Environment: Use Python 3.x with required libraries listed in requirements.txt.
-Code: Run the Jupyter Notebook Telco_Churn_Classification.ipynb.
-Instructions: Follow the comments and markdown cells in the notebook for step-by-step execution.
+
+* To reproduce this project:
+
+* Data: Obtain the Telco dataset from codeup mysql database named 'telco_churn'.
+
+* Environment: Use Python 3.x (jupyter notebook)
+
+* Code: Run the Jupyter Notebook Final_Report.ipynb inside my classification_project_telco repository.
+
+* Instructions: Follow the comments and markdown cells in the notebook for step-by-step execution.
 
 
 
 ## Key Findings, Recommendations, & Takeaways
 
 ### Key Findings:
-- The strongest relations of churn are contract_type(month-to-month), payment_type(electronic     check),internet_service_type(Fiberoptic),tech_support(no),device_protection(no),online_backup(no),online_security(no),dependentrs(no),senior_citizen(0)
 
-- Model decision tree(algorithm) with depth=8 achieves the highest accuracy.
+* The strongest relationship with churn are contract_type(month-to-month), payment_type(electronic     check),internet_service_type(Fiberoptic),tech_support(no),device_protection(no),online_backup(no),online_security(no),dependentrs(no),senior_citizen(0).
 
+* Implement continuous improvements in service quality, network coverage, or additional features that align with customer preferences like payment_type, contract_type, online security, tech supports e.t.c.
+ 
+* communication to address concerns and improve service quality.
 
 ### Recommendations:
-- Focus on retaining customers with long tenure by offering loyalty rewards or discounts.
-- Improve service quality in areas identified as significant churn predictors.
+* we might recommend and give attractive discount offer to customers for over a year, to prevent their churn rate is going high.
+
+* Will need to investigate further asking are these fees associated with each payment type or what are their delivery speeds or how thes are conveience to make a payment.
+
+* Identify high-risk tenure periods when churn rates tend to increase.Implement targeted retention campaigns during these phases, offering personalized support, exclusive benefits, or loyalty rewards to prevent churn.
+
+* communication to address concerns and improve service quality.
+
+* Implement continuous improvements in service quality, network coverage, or additional features that align with customer preferences like payment_type, contract_type, online security, tech supports e.t.c.
+
+
 
 
 ### Conclusion and Takeaways
-- This project demonstrates the effectiveness of machine learning in predicting customer churn for Telco companies. 
 
-- Understanding churn factors helps in making strategies to retain customers, thereby improving business sustainability.
+* This project demonstrates the effectiveness of machine learning in predicting customer churn for Telco companies. 
+
+* Understanding churn factors helps in making strategies to retain customers, thereby improving business sustainability.
 
 
 
